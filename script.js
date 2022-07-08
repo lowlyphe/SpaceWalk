@@ -16,10 +16,10 @@ let yyyy = today.getFullYear();
 let date = `${yyyy}-${mm}-${dd}`
 console.log(date)
 
-$calender.change(() => {
-  date = $calender.val()
-  console.log(date)
-});
+// $calender.change(() => {
+//   date = $calender.val()
+//   console.log(date)
+// });
 $APODButton.click(() => {
   $.get(
     `https://api.nasa.gov/planetary/apod?api_key=XpaEtffKhHiVgIXumgaV7YBjZaC5kEV2naWyLtKg&date=${date}`,
