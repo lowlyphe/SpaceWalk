@@ -4,9 +4,9 @@
 
 Space Walk is a web application that makes use of various space related APIs and presents that information in a fun and intuitive way to use. To get started simply clone this repo and run the index.html in your browser,
 
-    git clone https://github.com/lowlyphe/nasa-api-project.git
+    git clone https://github.com/lowlyphe/SpaceWalk.git
 
-or visit [SpaceWalk.surge.sh](SpaceWalk.surge.sh) for the most recent live version.
+or visit SpaceWalk.surge.sh for the most recent live version.
 
 ## Key Features
 
