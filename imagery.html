@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <script
+      src="https://kit.fontawesome.com/22acbece12.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <title>Visit Space</title>
+  </head>
+  <body>
+    <div class="headerContainer">
+      <div class="mainHeader">
+        <div class="apiContainer">
+          <p class="nasaAPI">Brought to you by</p>
+          <img src="images/nasaapi.png" />
+        </div>
+        <h1 class="header">Welcome To Space</h1>
+        <div class="planet">
+          <img src="images\planet_icon_149820.png" alt="" srcset="" />
+        </div>
+      </div>
+      <div class="navbar">
+        <a href="index.html">APOD</a>
+        <a href="imagery.html">Mars Imagery</a>
+        <a href="iss.html">Where The ISS At?</a>
+        <a href="solar-positions.html">Celestial Body Information</a>
+        <a href="404page.html">Secret Link</a>
+      </div>
+    </div>
+    <h2 class="solDate">Choose a Sol Date</h2>
+    <div class="solText">
+      <p>
+        A Sol date refers to the sol (Martian rotation or day) on which they
+        were taken, counting up from the rover's landing date. A photo taken on
+        Curiosity's 1000th Martian sol exploring Mars, for example, will have a
+        sol attribute of 1000 <br />
+        <br />
+        Curiosity landed on Mars November 26, 2011
+      </p>
+    </div>
+    <div class="solButtons">
+      <input type="text" class="solSearch" /><button class="imageryButton">
+        Search
+      </button>
+    </div>
+    <div class="pictureContainer"></div>
+    <div class="footer">
+      <p>
+        <a href="https://api.nasa.gov/" class="nasaLink"
+          >Click here for more information about the NASA API
+          &nbsp;&nbsp;&nbsp;</a
+        >| &nbsp;&nbsp;&nbsp;For More Of My Projects&nbsp;&nbsp;&nbsp;
+      </p>
+      <a href="https://www.github.com/lowlyphe"
+        ><img src="images\github-logo.png"
+      /></a>
+    </div>
+  </body>
+</html>
