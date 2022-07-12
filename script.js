@@ -8,23 +8,38 @@ const $issButton = $(".issButton");
 const $issContainer = $("<div></div>").addClass("issDataContainer");
 const $solarButton = $(".solarPositions");
 const $solarContainer = $(".solarContainer");
+const $rover = $('.rovers')
 
+//formatting date
 let today = new Date();
 let dd = String(today.getDate()).padStart(2, '0');
 let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 let yyyy = today.getFullYear();
 let date = `${yyyy}-${mm}-${dd}`
-console.log(date)
 
-// $calender.change(() => {
-//   date = $calender.val()
-//   console.log(date)
-// });
-$APODButton.click(() => {
+//detecting new date for APOD
+$calender.change(() => {
+  date = $calender.val();
+});
+$calender.click(() => {
+  $.get(
+    `https://api.nasa.gov/EPIC/api/natural/date/${date}?api_key=XpaEtffKhHiVgIXumgaV7YBjZaC5kEV2naWyLtKg`,
+    (data) => {
+    }
+  );
+});
+
+$(document).ready(() => {
   $.get(
     `https://api.nasa.gov/planetary/apod?api_key=XpaEtffKhHiVgIXumgaV7YBjZaC5kEV2naWyLtKg&date=${date}`,
     (data) => {
-      $APODcontainer.empty();
+      getAPOD(data);
+    }
+  );
+});
+
+const getAPOD = (data) => {
+  $APODcontainer.empty();
       const $APODtitleContainer = $("<div></div>")
         .addClass("titleandtitle")
         .appendTo($APODcontainer);
@@ -40,33 +55,40 @@ $APODButton.click(() => {
       $APODImage.attr("src", data.hdurl);
       $APODTitle.text(data.title);
       $APODinformation.text(`"${data.explanation}"`);
-    }
-  );
-});
+}
 
-$calender.change(() => {
-  let date = $calender.val();
-});
-$calender.click(() => {
+$APODButton.click(() => {
   $.get(
-    `https://api.nasa.gov/EPIC/api/natural/date/${date}?api_key=XpaEtffKhHiVgIXumgaV7YBjZaC5kEV2naWyLtKg`,
+    `https://api.nasa.gov/planetary/apod?api_key=XpaEtffKhHiVgIXumgaV7YBjZaC5kEV2naWyLtKg&date=${date}`,
     (data) => {
+      getAPOD(data);
     }
   );
-});
+})
+
+let curRover = 'curiosity'
+$rover.change(() => {
+  curRover = $rover.val()
+})
+
 
 $imageryButton.click(() => {
   $pictureContainer.empty();
   $.get(
-    `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${solDate}&api_key=XpaEtffKhHiVgIXumgaV7YBjZaC5kEV2naWyLtKg`,
+    `https://mars-photos.herokuapp.com/api/v1/rovers/${curRover}/photos?sol=${solDate}`,
     (data) => {
-      for (let i = 0; i < 26; i++) {
+    if (data.photos.length) {
+      console.log(data)
+      for (let i = 0; i < data.photos.length; i++) {
         const $marsPic = $("<div></div>").addClass("marsPic");
         $pictureContainer.append($marsPic);
         const $marsImg = $("<img></img>");
         $marsPic.append($marsImg);
         $marsImg.attr("src", data.photos[i].img_src);
       }
+    } else {
+      $pictureContainer.html($('<span class="default-text">Sorry, no images for this selection</span>'))
+    }
     }
   );
 });

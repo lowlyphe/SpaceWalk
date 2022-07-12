@@ -39,52 +39,125 @@
     <title>Visit Space</title>
   </head>
   <body>
-    <div class="headerContainer">
-      <div class="mainHeader">
-        <div class="apiContainer">
-          <p class="nasaAPI">Brought to you by</p>
-          <img src="images/nasaAPI.png" />
-        </div>
-        <h1 class="header">Welcome To Space</h1>
-        <div class="planet">
-          <img src="images\planet_icon_149820.png" alt="" srcset="" />
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
+            >
+              <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                fill="currentcolor"
+                d="M352 256C352 278.2 350.8 299.6 348.7 320H163.3C161.2 299.6 159.1 278.2 159.1 256C159.1 233.8 161.2 212.4 163.3 192H348.7C350.8 212.4 352 233.8 352 256zM503.9 192C509.2 212.5 512 233.9 512 256C512 278.1 509.2 299.5 503.9 320H380.8C382.9 299.4 384 277.1 384 256C384 234 382.9 212.6 380.8 192H503.9zM493.4 160H376.7C366.7 96.14 346.9 42.62 321.4 8.442C399.8 29.09 463.4 85.94 493.4 160zM344.3 160H167.7C173.8 123.6 183.2 91.38 194.7 65.35C205.2 41.74 216.9 24.61 228.2 13.81C239.4 3.178 248.7 0 256 0C263.3 0 272.6 3.178 283.8 13.81C295.1 24.61 306.8 41.74 317.3 65.35C328.8 91.38 338.2 123.6 344.3 160H344.3zM18.61 160C48.59 85.94 112.2 29.09 190.6 8.442C165.1 42.62 145.3 96.14 135.3 160H18.61zM131.2 192C129.1 212.6 127.1 234 127.1 256C127.1 277.1 129.1 299.4 131.2 320H8.065C2.8 299.5 0 278.1 0 256C0 233.9 2.8 212.5 8.065 192H131.2zM194.7 446.6C183.2 420.6 173.8 388.4 167.7 352H344.3C338.2 388.4 328.8 420.6 317.3 446.6C306.8 470.3 295.1 487.4 283.8 498.2C272.6 508.8 263.3 512 255.1 512C248.7 512 239.4 508.8 228.2 498.2C216.9 487.4 205.2 470.3 194.7 446.6H194.7zM190.6 503.6C112.2 482.9 48.59 426.1 18.61 352H135.3C145.3 415.9 165.1 469.4 190.6 503.6V503.6zM321.4 503.6C346.9 469.4 366.7 415.9 376.7 352H493.4C463.4 426.1 399.8 482.9 321.4 503.6V503.6z"
+                class="fa-primary"
+              /></svg
+            ><span class="link-text logo-text">APOD</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="imagery.html" class="nav-link"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                fill="currentcolor"
+                d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM266.3 48.25L232.5 73.6C227.2 77.63 224 83.95 224 90.67V99.72C224 106.5 229.5 112 236.3 112C238.7 112 241.1 111.3 243.1 109.9L284.9 82.06C286.9 80.72 289.3 80 291.7 80H292.7C298.9 80 304 85.07 304 91.31C304 94.31 302.8 97.19 300.7 99.31L280.8 119.2C275 124.1 267.9 129.4 260.2 131.9L233.6 140.8C227.9 142.7 224 148.1 224 154.2C224 157.9 222.5 161.5 219.9 164.1L201.9 182.1C195.6 188.4 192 197.1 192 206.1V210.3C192 226.7 205.6 240 221.9 240C232.9 240 243.1 233.8 248 224L252 215.9C254.5 211.1 259.4 208 264.8 208C269.4 208 273.6 210.1 276.3 213.7L292.6 235.5C294.7 238.3 298.1 240 301.7 240C310.1 240 315.6 231.1 311.8 223.6L310.7 221.3C307.1 214.3 310.7 205.8 318.1 203.3L339.3 196.2C346.9 193.7 352 186.6 352 178.6C352 168.3 360.3 160 370.6 160H400C408.8 160 416 167.2 416 176C416 184.8 408.8 192 400 192H379.3C372.1 192 365.1 194.9 360 200L355.3 204.7C353.2 206.8 352 209.7 352 212.7C352 218.9 357.1 224 363.3 224H374.6C380.6 224 386.4 226.4 390.6 230.6L397.2 237.2C398.1 238.1 400 241.4 400 244C400 246.6 398.1 249 397.2 250.8L389.7 258.3C386 261.1 384 266.9 384 272C384 277.1 386 282 389.7 285.7L408 304C418.2 314.2 432.1 320 446.6 320H453.1C460.5 299.8 464 278.3 464 256C464 144.6 376.4 53.64 266.3 48.25V48.25zM438.4 356.1C434.7 353.5 430.2 352 425.4 352C419.4 352 413.6 349.6 409.4 345.4L395.1 331.1C388.3 324.3 377.9 320 367.1 320C357.4 320 347.9 316.5 340.5 310.2L313.1 287.4C302.4 277.5 287.6 271.1 272.3 271.1H251.4C238.7 271.1 226.4 275.7 215.9 282.7L188.5 301C170.7 312.9 160 332.9 160 354.3V357.5C160 374.5 166.7 390.7 178.7 402.7L194.7 418.7C203.2 427.2 214.7 432 226.7 432H248C261.3 432 272 442.7 272 456C272 458.5 272.4 461 273.1 463.3C344.5 457.5 405.6 415.7 438.4 356.1L438.4 356.1zM164.7 100.7L132.7 132.7C126.4 138.9 126.4 149.1 132.7 155.3C138.9 161.6 149.1 161.6 155.3 155.3L187.3 123.3C193.6 117.1 193.6 106.9 187.3 100.7C181.1 94.44 170.9 94.44 164.7 100.7V100.7z"
+                class="fa-primary"
+              /></svg
+            ><span class="link-text logo-text">Mars Imagery</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="iss.html" class="nav-link"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                fill="currentcolor"
+                d="M502.8 264.1l-80.37-80.37l47.87-47.88c13-13.12 13-34.37 0-47.5l-47.5-47.5c-13.12-13.12-34.38-13.12-47.5 0l-47.88 47.88L247.1 9.25C241 3.375 232.9 0 224.5 0c-8.5 0-16.62 3.375-22.5 9.25l-96.75 96.75c-12.38 12.5-12.38 32.62 0 45.12L185.5 231.5L175.8 241.4c-54-24.5-116.3-22.5-168.5 5.375c-8.498 4.625-9.623 16.38-2.873 23.25l107.6 107.5l-17.88 17.75c-2.625-.75-5-1.625-7.75-1.625c-17.75 0-32 14.38-32 32c0 17.75 14.25 32 32 32c17.62 0 32-14.25 32-32c0-2.75-.875-5.125-1.625-7.75l17.75-17.88l107.6 107.6c6.75 6.75 18.62 5.625 23.12-2.875c27.88-52.25 29.88-114.5 5.375-168.5l10-9.873l80.25 80.36c12.5 12.38 32.62 12.38 44.1 0l96.75-96.75C508.6 304.1 512 295.1 512 287.5C512 279.1 508.6 270.1 502.8 264.1zM219.5 197.4L150.6 128.5l73.87-73.75l68.86 68.88L219.5 197.4zM383.5 361.4L314.6 292.5l73.75-73.88l68.88 68.87L383.5 361.4z"
+                class="fa-primary"
+              /></svg
+            ><span class="link-text logo-text">Where the ISS at?</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="solar-positions.html" class="nav-link"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                fill="currentcolor"
+                d="M156.6 384.9L125.7 353.1C117.2 345.5 114.2 333.1 117.1 321.8C120.1 312.9 124.1 301.3 129.8 288H24C15.38 288 7.414 283.4 3.146 275.9C-1.123 268.4-1.042 259.2 3.357 251.8L55.83 163.3C68.79 141.4 92.33 127.1 117.8 127.1H200C202.4 124 204.8 120.3 207.2 116.7C289.1-4.07 411.1-8.142 483.9 5.275C495.6 7.414 504.6 16.43 506.7 28.06C520.1 100.9 516.1 222.9 395.3 304.8C391.8 307.2 387.1 309.6 384 311.1V394.2C384 419.7 370.6 443.2 348.7 456.2L260.2 508.6C252.8 513 243.6 513.1 236.1 508.9C228.6 504.6 224 496.6 224 488V380.8C209.9 385.6 197.6 389.7 188.3 392.7C177.1 396.3 164.9 393.2 156.6 384.9V384.9zM384 167.1C406.1 167.1 424 150.1 424 127.1C424 105.9 406.1 87.1 384 87.1C361.9 87.1 344 105.9 344 127.1C344 150.1 361.9 167.1 384 167.1z"
+                class="fa-primary"
+              /></svg
+            ><span class="link-text logo-text">Exo Planets</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="https://api.nasa.gov/" class="nav-link"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                fill="currentcolor"
+                d="M176 448C167.3 448 160 455.3 160 464V512h32v-48C192 455.3 184.8 448 176 448zM272 448c-8.75 0-16 7.25-16 16s7.25 16 16 16s16-7.25 16-16S280.8 448 272 448zM164 172l8.205 24.62c1.215 3.645 6.375 3.645 7.59 0L188 172l24.62-8.203c3.646-1.219 3.646-6.375 0-7.594L188 148L179.8 123.4c-1.215-3.648-6.375-3.648-7.59 0L164 148L139.4 156.2c-3.646 1.219-3.646 6.375 0 7.594L164 172zM336.1 315.4C304 338.6 265.1 352 224 352s-80.03-13.43-112.1-36.59C46.55 340.2 0 403.3 0 477.3C0 496.5 15.52 512 34.66 512H128v-64c0-17.75 14.25-32 32-32h128c17.75 0 32 14.25 32 32v64h93.34C432.5 512 448 496.5 448 477.3C448 403.3 401.5 340.2 336.1 315.4zM64 224h13.5C102.3 280.5 158.4 320 224 320s121.8-39.5 146.5-96H384c8.75 0 16-7.25 16-16v-96C400 103.3 392.8 96 384 96h-13.5C345.8 39.5 289.6 0 224 0S102.3 39.5 77.5 96H64C55.25 96 48 103.3 48 112v96C48 216.8 55.25 224 64 224zM104 136C104 113.9 125.5 96 152 96h144c26.5 0 48 17.88 48 40V160c0 53-43 96-96 96h-48c-53 0-96-43-96-96V136z"
+                class="fa-primary"
+              /></svg
+            ><span class="link-text logo-text">NASA API Project</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="https://www.github.com/lowlyphe" class="nav-link"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+              <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                fill="currentcolor"
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                class="fa-primary"
+              /></svg
+            ><span class="link-text logo-text">More of My Projects</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="headerContainer">
+        <div class="mainHeader">
+          <div class="apiContainer">
+            <p class="nasaAPI">Brought to you by</p>
+            <img src="images/nasaAPI.png" />
+          </div>
+          <h1 class="header">Welcome To Mars</h1>
+          <div class="planet">
+            <img src="images\planet_icon_149820.png" alt="" srcset="" />
+          </div>
         </div>
       </div>
-      <div class="navbar">
-        <a href="index.html">APOD</a>
-        <a href="imagery.html">Mars Imagery</a>
-        <a href="iss.html">Where The ISS At?</a>
-        <a href="solar-positions.html">Celestial Body Information</a>
-        <a href="404page.html">Secret Link</a>
+      <h2 class="solDate">Choose a Sol Date</h2>
+      <div class="solText">
+        <p>
+          A Sol date refers to the sol (Martian rotation or day) on which they
+          were taken, counting up from the rover's landing date. A photo taken
+          on Curiosity's 1000th Martian sol exploring Mars, for example, will
+          have a sol attribute of 1000 <br />
+          <br />
+          Curiosity landed on Mars November 26, 2011
+        </p>
       </div>
-    </div>
-    <h2 class="solDate">Choose a Sol Date</h2>
-    <div class="solText">
-      <p>
-        A Sol date refers to the sol (Martian rotation or day) on which they
-        were taken, counting up from the rover's landing date. A photo taken on
-        Curiosity's 1000th Martian sol exploring Mars, for example, will have a
-        sol attribute of 1000 <br />
-        <br />
-        Curiosity landed on Mars November 26, 2011
-      </p>
-    </div>
-    <div class="solButtons">
-      <input type="text" class="solSearch" /><button class="imageryButton">
-        Search
-      </button>
-    </div>
-    <div class="pictureContainer"></div>
-    <div class="footer">
-      <p>
-        <a href="https://api.nasa.gov/" class="nasaLink"
-          >Click here for more information about the NASA API
-          &nbsp;&nbsp;&nbsp;</a
-        >| &nbsp;&nbsp;&nbsp;For More Of My Projects&nbsp;&nbsp;&nbsp;
-      </p>
-      <a href="https://www.github.com/lowlyphe"
-        ><img src="images\github-logo.png"
-      /></a>
-    </div>
+      <div class="solButtons">
+        <label class="rover">Rover:</label>
+        <select name="rovers" class="rovers">
+          <option value="curiosity">Curiosity</option>
+          <option value="perseverance">Perseverance</option>
+          <option value="opportunity">Opportunity</option>
+          <option value="spirit">Spirit</option>
+        </select>
+        <input type="text" class="solSearch" placeholder="Sol Date" /><button
+          class="imageryButton"
+        >
+          Search
+        </button>
+      </div>
+      <div class="pictureContainer"></div>
+    </main>
   </body>
 </html>
